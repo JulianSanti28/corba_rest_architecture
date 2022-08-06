@@ -24,7 +24,7 @@ public class CompraControladorImpl extends ControladorCompraIntPOA{
             
     
     @Override
-    public boolean registrarNotificacion(CompraDTO objCompra) {
+    public boolean registrarCompra(CompraDTO objCompra) {
         boolean bandera=false;
         if(this.objCompraRepositorio.registrarCompra(objCompra))
         {

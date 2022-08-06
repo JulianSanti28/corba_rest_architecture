@@ -17,7 +17,7 @@ public abstract class ControladorCompraIntPOA extends org.omg.PortableServer.Ser
   private static java.util.Hashtable _methods = new java.util.Hashtable ();
   static
   {
-    _methods.put ("registrarNotificacion", new java.lang.Integer (0));
+    _methods.put ("registrarCompra", new java.lang.Integer (0));
     _methods.put ("listarCanciones", new java.lang.Integer (1));
   }
 
@@ -36,7 +36,7 @@ public abstract class ControladorCompraIntPOA extends org.omg.PortableServer.Ser
        {
          sop_corba.ControladorCompraIntPackage.CompraDTO objCompra = sop_corba.ControladorCompraIntPackage.CompraDTOHelper.read (in);
          boolean $result = false;
-         $result = this.registrarNotificacion(objCompra);
+         $result = this.registrarCompra (objCompra);
          out = $rh.createReply();
          out.write_boolean ($result);
          break;

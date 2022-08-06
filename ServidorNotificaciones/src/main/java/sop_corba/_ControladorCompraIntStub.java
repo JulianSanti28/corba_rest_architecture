@@ -11,7 +11,7 @@ package sop_corba;
 public class _ControladorCompraIntStub extends org.omg.CORBA.portable.ObjectImpl implements sop_corba.ControladorCompraInt
 {
 
-  public boolean registrarNotificacion(sop_corba.ControladorCompraIntPackage.CompraDTO objCompra)
+  public boolean registrarCompra (sop_corba.ControladorCompraIntPackage.CompraDTO objCompra)
   {
             org.omg.CORBA.portable.InputStream $in = null;
             try {
@@ -25,7 +25,7 @@ public class _ControladorCompraIntStub extends org.omg.CORBA.portable.ObjectImpl
                 String _id = $ex.getId ();
                 throw new org.omg.CORBA.MARSHAL (_id);
             } catch (org.omg.CORBA.portable.RemarshalException $rm) {
-                return registrarNotificacion(objCompra        );
+                return registrarCompra (objCompra        );
             } finally {
                 _releaseReply ($in);
             }

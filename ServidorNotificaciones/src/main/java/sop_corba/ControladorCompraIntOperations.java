@@ -10,6 +10,6 @@ package sop_corba;
 
 public interface ControladorCompraIntOperations 
 {
-  boolean registrarNotificacion(sop_corba.ControladorCompraIntPackage.CompraDTO objCompra);
+  boolean registrarCompra (sop_corba.ControladorCompraIntPackage.CompraDTO objCompra);
   sop_corba.ControladorCompraIntPackage.CompraDTO[] listarCanciones ();
 } // interface ControladorCompraIntOperations
